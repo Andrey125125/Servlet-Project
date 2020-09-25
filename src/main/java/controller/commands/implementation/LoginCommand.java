@@ -20,6 +20,7 @@ public class LoginCommand implements Command {
     @Override
     public String execute(HttpServletRequest req, HttpServletResponse resp) throws Exception {
 
+        logout(req);
         String name = req.getParameter("login");
         String pass = req.getParameter("password");
 
@@ -70,11 +71,7 @@ public class LoginCommand implements Command {
         }
     }
 
-    /**
-     * Making logout to invalidate last user session
-     *
-     * @param request with session that will be putted instead of previous
-     */
+
     private void logout(HttpServletRequest request) {
         Optional.ofNullable(request.getSession().getAttribute("user")).ifPresent(x ->
                 loginUtil.logOut(request.getSession())

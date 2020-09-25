@@ -5,6 +5,7 @@ package controller;
 import controller.commands.Command;
 import controller.commands.implementation.IndexCommand;
 import controller.commands.implementation.LoginCommand;
+import controller.commands.implementation.ReaderCommand;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;
@@ -29,9 +30,10 @@ public class Servlet extends HttpServlet {
     public void init(ServletConfig servletConfig) {
         context = servletConfig.getServletContext();
         commands = new ConcurrentHashMap<>();
-//
+
         commands.put("index", new IndexCommand());
         commands.put("login", new LoginCommand());
+        commands.put("reader", new ReaderCommand());
 
     }
 
