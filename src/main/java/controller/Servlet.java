@@ -19,7 +19,6 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 @WebServlet(urlPatterns = "/library/*" , loadOnStartup = 1)
-//@WebServlet(value = "/library/logi",  loadOnStartup = 1)
 public class Servlet extends HttpServlet {
 
 

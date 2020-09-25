@@ -1,12 +1,12 @@
 
-…
-java:S1989;"hHandle the following exceptions that could be thrown by "processRequest": ServletException, IOException.(Æ‘ÞÕ8ÇÌø…Ì.
 j
-java:S5361T"HReplace this call to "replaceAll()" by a call to the "replace()" method.(Ë“€Žúÿÿÿÿ8ó‚‰†Ì.
-S
-java:S2696"6Make the enclosing method "static" or remove this set.(µþúœ8Äôø…Ì.
-X	java:S125#"<This block of commented-out lines of code should be removed.(ø÷¶8ïÃù…Ì.
-X	java:S125"<This block of commented-out lines of code should be removed.(—óä§8ÇÌø…Ì.
+java:S5361G"HReplace this call to "replaceAll()" by a call to the "replace()" method.(Ë“€Žúÿÿÿÿ8·•ý¡Ì.
 …
-java:S1989@"hHandle the following exceptions that could be thrown by "processRequest": ServletException, IOException.(Æ‘ÞÕ8ÇÌø…Ì.
-W	java:S125H"<This block of commented-out lines of code should be removed.(¼¯¯v8ç­†Ì.
+java:S19893"hHandle the following exceptions that could be thrown by "processRequest": ServletException, IOException.(Æ‘ÞÕ8·•ý¡Ì.
+W	java:S125;"<This block of commented-out lines of code should be removed.(¼¯¯v8·•ý¡Ì.
+…
+java:S1989."hHandle the following exceptions that could be thrown by "processRequest": ServletException, IOException.(Æ‘ÞÕ8·•ý¡Ì.
+S
+java:S2696"6Make the enclosing method "static" or remove this set.(šÓ³Ñ8ÌÈŒ¦Ì.
+S
+java:S2696 "6Make the enclosing method "static" or remove this set.(µþúœ8ÌÈŒ¦Ì.

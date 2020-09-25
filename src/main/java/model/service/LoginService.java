@@ -2,7 +2,7 @@ package model.service;
 
 import model.entity.User;
 
-import javax.jws.soap.SOAPBinding;
+
 import java.util.*;
 
 public class LoginService {

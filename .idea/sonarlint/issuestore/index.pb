@@ -23,3 +23,7 @@ U
 web/login.jsp,9\6\96feae7a218a9e80e2acc1b853081519adaf9654
 T
 $src/main/java/model/entity/User.java,7\d\7d46df4109d8411dc9d4c22fe13f2270c2c7f35c
+]
+-src/main/java/controller/utils/LoginUtil.java,c\0\c06947e52752c1efa079c5a952e826c2d161c1e2
+\
+,.idea/artifacts/WebServlets_Web_exploded.xml,7\3\730ad777dea1b8b9dc519af40a7c64b2e0b1fe79

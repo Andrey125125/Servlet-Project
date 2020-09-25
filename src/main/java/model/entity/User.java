@@ -2,9 +2,6 @@ package model.entity;
 
 public class User {
 
-
-
-
     public enum ROLE {
         reader, admin, guest;
     }
