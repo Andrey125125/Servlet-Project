@@ -88,7 +88,7 @@ public class LoginCommand implements Command {
 
     private String getRedirectPath(User.ROLE role) {
         if (role == User.ROLE.reader) {
-            return "redirect: /park/driver";
+            return "redirect: /library/reader";
         } else return "/login.jsp";
     }
 

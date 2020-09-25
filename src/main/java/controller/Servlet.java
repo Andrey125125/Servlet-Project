@@ -32,22 +32,7 @@ public class Servlet extends HttpServlet {
 //
         commands.put("index", new IndexCommand());
         commands.put("login", new LoginCommand());
-//        commands.put("register", new RegisterCommand());
-//        commands.put("logout", new LogoutCommand());
-//        commands.put("driver", new DriverCommand());
-//        commands.put("driver/history", new DriverHistoryCommand());
-//        commands.put("driver/acceptButton", new DriverAcceptButtonCommand());
-//        commands.put("admin", new AdminCommand());
-//        commands.put("admin/add_car", new AdminCarCommand());
-//        commands.put("admin/add_new_car", new AdminAddingCarButtonCommand());
-//        commands.put("admin/add_route", new AdminRouteCommand());
-//        commands.put("admin/add_new_route", new AdminAddingRouteButtonCommand());
-//        commands.put("admin/insert_assignment", new AdminInsertAssignmentCommand());
-//        commands.put("admin/find_free_drivers_and_buses", new AdminFindCommand(new AdminMainPageService()));
-//        commands.put("admin/selected_driver_id", new AdminFormDriverIdCommand());
-//        commands.put("admin/cancelButton", new AdminRefuseButtonCommand());
-//        commands.put("exception", new ExceptionCommand());
-//        log.info("Commands was initialized");
+
     }
 
     public static ServletContext getContext() {
