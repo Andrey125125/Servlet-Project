@@ -12,14 +12,14 @@
 </head>
 <body>
 login goes here
-<form class="login-form" method="post" action="${pageContext.request.contextPath}/library/login">
+<form  method="post" action="${pageContext.request.contextPath}/library/login" >
     <div class="input-group">
-        <input type="text" class="form-control" placeholder="your login"  name="login">
+        <input type="text"   name="login">
     </div>
     <div class="input-group">
-        <input type="password" class="form-control" placeholder="your password" name="password">
+        <input type="password"   name="password">
     </div>
-<button class="btn btn-primary btn-lg btn-block" type="submit">login</button>
+<button  type="submit">login</button>
 </form>
 </body>
 </html>

@@ -6,7 +6,7 @@ public class User {
 
 
     public enum ROLE {
-        driver, admin, guest;
+        reader, admin, guest;
     }
     private int id;
 

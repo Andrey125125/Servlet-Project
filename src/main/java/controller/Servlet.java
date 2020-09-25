@@ -27,7 +27,7 @@ public class Servlet extends HttpServlet {
 
     @Override
     public void init(ServletConfig servletConfig) {
-//        context = servletConfig.getServletContext();
+        context = servletConfig.getServletContext();
         commands = new ConcurrentHashMap<>();
 //
         commands.put("index", new IndexCommand());
