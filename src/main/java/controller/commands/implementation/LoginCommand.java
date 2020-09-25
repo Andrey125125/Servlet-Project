@@ -41,7 +41,7 @@ public class LoginCommand implements Command {
         if (login == null || login.equals("") || password == null || password.equals("")) {
             throw new RuntimeException("Invalid name or password");
         }
-        Optional<User> user = service.validateUser(login, password);
+        Optional<User> user = service.checkUser(login, password);
         if (user.isPresent()) {
             logIn(request, user.get());
             return user.get();
@@ -87,7 +87,7 @@ public class LoginCommand implements Command {
     }
 
     private String getRedirectPath(User.ROLE role) {
-        if (role == User.ROLE.driver) {
+        if (role == User.ROLE.reader) {
             return "redirect: /park/driver";
         } else return "/login.jsp";
     }

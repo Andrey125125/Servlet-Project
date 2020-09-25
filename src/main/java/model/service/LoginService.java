@@ -2,21 +2,37 @@ package model.service;
 
 import model.entity.User;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Optional;
+import javax.jws.soap.SOAPBinding;
+import java.util.*;
 
 public class LoginService {
 
-    private static Map<String, String> users = new HashMap<>();
+    private static List<User> users = new ArrayList<>();
     static  {
-        users.put("user", "user");
-        users.put("admin", "admin");
-        users.put("user2", "user2");
+        User admin = new User();
+        admin.setRole(User.ROLE.admin);
+        admin.setLogin("admin");
+        admin.setPassword("admin");
+        users.add(admin);
+        User user = new User();
+        user.setRole(User.ROLE.reader);
+        user.setLogin("user");
+        user.setPassword("user");
+        users.add(user);
+        User user1 = new User();
+        user1.setRole(User.ROLE.reader);
+        user1.setLogin("user1");
+        user1.setPassword("user1");
+        users.add(user1);
+
     }
 
 
     public Optional<User> checkUser(String login, String password){
-        return Optional.ofNullable(users.get(login));
+        Optional<User> optionalUser = Optional.empty();
+        for (User user: users){
+            if (user.getLogin().equals(login) && user.getPassword().equals(password)) optionalUser = Optional.of(user);
+        }
+        return optionalUser;
     }
 }
