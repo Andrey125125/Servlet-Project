@@ -23,17 +23,17 @@ public class ReaderAccessFilter implements Filter {
 
         HttpSession session = ( (HttpServletRequest)servletRequest).getSession();
 
-        User.ROLE role = getUserRole(session);
+        User.Role role = getUserRole(session);
 
-        if ( !role.equals(User.ROLE.reader)) throw new PageNotAccessibleExeption("reader page access denied");
+        if ( !role.equals(User.Role.READER)) throw new PageNotAccessibleExeption("reader page access denied");
 
         filterChain.doFilter(servletRequest, servletResponse);
     }
 
 
-    private User.ROLE getUserRole(HttpSession session) {
+    private User.Role getUserRole(HttpSession session) {
         return session.getAttribute("user") != null ?
-                ((User) session.getAttribute("user")).getRole() : User.ROLE.guest;
+                ((User) session.getAttribute("user")).getRole() : User.Role.GUEST;
     }
 
     @Override

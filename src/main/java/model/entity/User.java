@@ -2,14 +2,14 @@ package model.entity;
 
 public class User {
 
-    public enum ROLE {
-        reader, admin, guest;
+    public enum Role {
+        READER, ADMIN, GUEST;
     }
     private int id;
 
     private String login;
     private String password;
-    private ROLE role;
+    private Role role;
     private String firstName;
 
     private String secondName;
@@ -38,11 +38,11 @@ public class User {
         this.password = password;
     }
 
-    public ROLE getRole() {
+    public Role getRole() {
         return role;
     }
 
-    public void setRole(ROLE role) {
+    public void setRole(Role role) {
         this.role = role;
     }
 

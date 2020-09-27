@@ -10,17 +10,17 @@ public class LoginService {
     private static List<User> users = new ArrayList<>();
     static  {
         User admin = new User();
-        admin.setRole(User.ROLE.admin);
+        admin.setRole(User.Role.ADMIN);
         admin.setLogin("admin");
         admin.setPassword("admin");
         users.add(admin);
         User user = new User();
-        user.setRole(User.ROLE.reader);
+        user.setRole(User.Role.READER);
         user.setLogin("user");
         user.setPassword("user");
         users.add(user);
         User user1 = new User();
-        user1.setRole(User.ROLE.reader);
+        user1.setRole(User.Role.READER);
         user1.setLogin("user1");
         user1.setPassword("user1");
         users.add(user1);

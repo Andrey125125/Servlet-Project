@@ -83,8 +83,8 @@ public class LoginCommand implements Command {
         return "/login.jsp";
     }
 
-    private String getRedirectPath(User.ROLE role) {
-        if (role == User.ROLE.reader) {
+    private String getRedirectPath(User.Role role) {
+        if (role == User.Role.READER) {
             return "redirect: /library/reader";
         } else return "/login.jsp";
     }
