@@ -1,7 +1,0 @@
-
-b	java:S112+"FDefine and throw a dedicated exception instead of using a generic one.(„¦±ó8ÃÇŒ¦Ì.
-^
-java:S2259"BA "NullPointerException" could be thrown; "user" is nullable here.(à›û8ÃÇŒ¦Ì.
-\
-java:S2441A":Make "User" serializable or don't store it in the session.(£™Õàûÿÿÿÿ8ÃÇŒ¦Ì.
-]	java:S125"<This block of commented-out lines of code should be removed.(ì›¤Ùýÿÿÿÿ8ÃÇŒ¦Ì.

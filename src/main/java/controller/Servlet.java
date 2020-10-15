@@ -3,6 +3,7 @@ package controller;
 
 
 import controller.commands.Command;
+import controller.commands.implementation.AdminCommand;
 import controller.commands.implementation.IndexCommand;
 import controller.commands.implementation.LoginCommand;
 import controller.commands.implementation.ReaderCommand;
@@ -33,6 +34,7 @@ public class Servlet extends HttpServlet {
         commands.put("index", new IndexCommand());
         commands.put("login", new LoginCommand());
         commands.put("reader", new ReaderCommand());
+        commands.put("admin", new AdminCommand())
 
     }
 
